@@ -112,7 +112,7 @@
         $recap = "Une nouvelle commande de ".$coordon[0]." vient d'être passé. 
         <br>Article(s): ".$articles_string." soit : ".$total_price." €
         <br>Coordonnées: ".$to." ; ".$coordon[0]." ; ".$coordon[1]." ".$coordon[2]." ".$coordon[3];
-        mail('quentinbauer21@gmail.com', `nouvelle commande de {$coordon[0]}`, $recap);     
+        mail('baptistemoog@outlook.fr', `nouvelle commande de {$coordon[0]}`, $recap);     
         header('location: merci.html');
     }else echo "ERROR"
     
