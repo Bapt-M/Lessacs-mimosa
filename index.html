@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les sacs Mimosa !</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8ececc041.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home" class="brand-container"><h1>Mimosa</h1></a>
+        <div class="toggle-menu" onclick="activate(this)">
+            <div class="sp1"></div>
+            <div class="sp2"></div>
+            <div class="sp3"></div>
+        </div>
+        <div class="menu-list">
+            
+                <ul>
+                    <li><a href="#project">Notre projet</a> </li>
+                    <li><a href="#bags">Nos sacs</a></li>
+                    <li><a href="#contact">Nous contacter</a></li>
+                    <li><button class="command-btn" onclick="showCommandBox(this)">Commander <br>le(s) votre(s)</button></li>
+                </ul>
+            
+            
+            <div class="command-box">
+                <h1>Ma commande !</h1>
+                <form action="./command.php" method="POST">
+                    <input type="email" name="email" placeholder="Votre e-mail" required>
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="text" name="firstname" placeholder="Votre prénom" required>
+                    <input type="text" name="adress" placeholder="Votre adresse postale" required>
+                    <input type="text" name="adressCity" placeholder="Votre ville" required>
+                    <input type="text" name="adressCode" placeholder="Votre code postale" required>
+                    <div class="command-choice">
+                        <article class="feature1">
+                            <input type="checkbox" name='bag[]' id="olea" value="1 sac Olea"/>
+                            <div>
+                              <span>
+                                Sac Oléa</br>6 €
+                              </span>
+                            </div>
+                          </article>
+                          
+                          <article class="feature2">
+                            <input type="checkbox" name='bag[]' id="citron" value="1 sac Citron"/>
+                            <div>
+                              <span>
+                                Sac Citron<br>7,60 €
+                              </span>
+                            </div>
+                          </article>
+                          
+                          <article class="feature3">
+                            <input type="checkbox" name='bag[]' id="patate" value="1 sac Patate"/>
+                            <div>
+                              <span>
+                                Sac Patate<br>9,20 €
+                              </span>
+                            </div>
+                          </article>
+                          <article class="feature4">
+                            <input type="checkbox" name='bag[]' id="every" value="1 pack de chaque sac"/>
+                            <div>
+                              <span>
+                                Pack 1 de chaque<br>19,80 €
+                              </span>
+                            </div>
+                          </article>
+                          <article class="feature4">
+                            <input type="checkbox" name='bag[]' id="three" value="1 pack de 3 Citrons"/>
+                            <div>
+                              <span>
+                                Pack 3 Citrons<br>19,80 €
+                              </span>
+                            </div>
+                          </article>
+                    </div>
+                    <a href="paiement.html">Comment payer ?</a>
+                    <input type="submit" name="submit" value='Commander !'>
+                </form>
+            </div>
+        </div>
+        
+    </nav>
+    </div>
+    <section id="home">
+        <img src="logo.png" class="bg">
+        <img src="fruit.png" class="pear">
+        <img src="fruit2.png" class="apple">
+        <img src="vegetable.png" class="carot">
+        <img src="fruit3.png" class="grape">
+    </section>
+    <section id="project">
+        <div class='project-img' >
+            <img src="earth.png" class="earth">
+        </div>
+        <div class="project-text"><h2>Notre projet</h2>
+            Mimosa est une marque qui a pour vision d’essayer de prendre soin de la planète avec des petits gestes,</br> 
+            et en réalisant ses produits de manière la plus durable possible.</br>
+            Pour ce faire, nous fabriquons nos produits localement en utilisant des matériaux durables 
+            </br>et prenons soin que chacun de nos produits, conçus artisanalement,
+            respectent des normes écologiques et sociales.</br>Cela assure la qualité de nos produits.</br></br>
+            
+            En rejoignant Mimosa, vous rejoignez une équipe qui est persuadée que même les petits gestes, 
+            lorsqu’ils sont bien faits,</br>nous permettent d’aller plus loin ensemble.</br>
+            Et “ parce qu’un petit zeste peut faire une grande différence”</br>nous sommes très heureux de 
+            vous accueillir dans notre grande équipe (même meilleur que le PSG) !    
+        </div>
+    </section>
+    <section id="bags">
+        <div class="bag-img" >
+            <img src="Sac3D.png" class="bag-3d">
+        </div>
+        
+        <div class="bag-text" ><h2>Nos sacs</h2>
+            Nos sacs se déclinent en 3 modèles différents.</br>
+            On y retrouve du plus petit au plus grand, le sac Oléa, le sac Citron et le sac Patate.</br></br>
+
+            Ils sont tous les trois réalisés en coton bio labellisé GOTS qui assure la qualité de nos produits,</br>
+            tant sur l’aspect environnemental que social. La corde est quant à elle réalisée en chute de tissu. 🧵</br></br>
+
+            De plus, nos sacs sont réalisés artisanalement dans un atelier local du Bas-Rhin.</br>
+            Cet atelier situé proche de Strasbourg, participe à l’économie social et solidaire.</br>
+            La conception de nos sacs a donc permis la création d’emplois dans l’atelier. 🤝</br></br>
+
+            De quoi donner la pêche à fruits et légumes non ? ☀️ </br></br>
+
+            Pour ce qui est de la contenance dans le sac Oléa, on peut y mettre 4 pêches et un abricot ( c’est précis ! )</br>
+            Pour le sac Citron on y rentre 5 pommes.</br>
+            Et enfin pour le sac Patate, on y met aisément plus de 2kg de patate !</br>
+        </div>
+    </section>
+    <div class="bag-photo">
+        <img src="sacO.jpg" >
+        <img src="sacC.jpg" >
+        <img src="sacP.jpg" >
+    </div>
+    <section id="contact">
+        <div><h3>Nous contacter</h3></div>
+        <div class="sm">
+            <a href="https://www.facebook.com/lesacsMimosa"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/lesacs_mimosa/"  target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+    </section>
+</body>
+</html>

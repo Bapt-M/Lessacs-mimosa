@@ -1,0 +1,91 @@
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Instructions pour le paiement</title>
+            <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                    font-family: 'Dosis', sans-serif;
+                }
+                body{
+                    height: 100vh;
+                    width: 100%;
+                    background: #d7eaf8;
+                    overflow-x: hidden;
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                img{
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    top: 5%;
+                    left: 5%;
+                    transform: translate(-5%, -5%);
+                }
+                h1{
+                    text-align: center;
+                    font-size: 70px;
+                    color: #eca335;
+                    margin-top: 10%;
+                }
+                p{
+                    text-align: center;
+                    margin-top: 100px;
+                    font-size: 25px;
+                }
+                a{
+                    color: black;
+                }
+                button{
+                    padding: 7px;
+                    margin: 100px auto;
+                    background: #eca335;
+                    width: 150px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    font-size: 1.5rem;
+                    transition: .3s linear;
+                }
+                button:hover{
+                    background: #fceb3a;
+                    color: #eca335;
+                    border: 2px solid;
+                }
+                .rib{
+                    text-align: center;
+                    background: #fff;
+                    width: fit-content;
+                    margin: 10px auto;
+                    padding: 15px;
+                    border-radius: 5px;
+                }
+                .rib h5{
+                    font-size: 2rem;
+                }
+            </style>
+        </head>
+        <body>
+            <img src='logo.png'>
+            <h1>Insctructions pour le paiement</h1>
+            <p>
+                1. <b>Verifiez</b> bien le montant indiqué dans le mail !
+            </br>2. <b>Effectuez</b> un virement avec comme titre : <b>NOM - Prénom - mail</b>
+            </br>aux coordonnées banquaires suivantes :
+                <div class='rib'>
+                    <h5>Relevé d'Identité Bancaire</h5></br>
+                    <pre>10278         05453         00019141103         53</pre></br>
+                    <b>IBAN :</b> FR76 1027 8054 5300 0191 4110 353</br></br>
+                    <b>BIC :</b> CMCIFR2A</br>
+                </div>
+                <button onclick="window.open('./index.html', '_self')">Retour au site</button>
+            </p>
+        </body>
+        </html>
